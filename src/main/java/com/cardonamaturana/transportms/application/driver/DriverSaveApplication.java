@@ -1,7 +1,7 @@
 package com.cardonamaturana.transportms.application.driver;
 
 import com.cardonamaturana.transportms.domain.entity.Driver;
-import com.cardonamaturana.transportms.domain.service.DriverSaveService;
+import com.cardonamaturana.transportms.domain.service.driver.DriverSaveService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

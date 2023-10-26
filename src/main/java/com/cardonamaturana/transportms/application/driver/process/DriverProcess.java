@@ -1,6 +1,6 @@
-package com.cardonamaturana.transportms.application.driver;
+package com.cardonamaturana.transportms.application.driver.process;
 
-import com.cardonamaturana.transportms.domain.service.DriverIsExistByIdService;
+import com.cardonamaturana.transportms.domain.service.driver.DriverIsExistByIdService;
 import com.cardonamaturana.transportms.shared.exceptions.driver.DriverNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

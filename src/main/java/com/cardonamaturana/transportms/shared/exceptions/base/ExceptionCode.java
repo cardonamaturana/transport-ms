@@ -15,7 +15,9 @@ public enum ExceptionCode {
       "Exception.NOT_VALID_PARAMETER_STRUCTURE",
       "Error en los campos del JSON o los valores ingresados no tienen el tipo de dato correcto."),
   DRIVER_NOT_FOUND("ERR-003", "Exception.DRIVER_NOT_FOUND",
-      "No existe un conductor con el id ingresado");
+      "No existe un conductor con el id ingresado"),
+  VEHICLE_NOT_FOUND("ERR-004", "Exception.VEHICLE_NOT_FOUND",
+      "No existe un vehiculo con el id ingresado");
 
   private final String code;
   private final String type;

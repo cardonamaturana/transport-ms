@@ -1,7 +1,7 @@
-package com.cardonamaturana.transportms.infrastructure.adapters;
+package com.cardonamaturana.transportms.infrastructure.adapters.driver;
 
 import com.cardonamaturana.transportms.domain.entity.Driver;
-import com.cardonamaturana.transportms.domain.service.DriverSaveService;
+import com.cardonamaturana.transportms.domain.service.driver.DriverSaveService;
 import com.cardonamaturana.transportms.infrastructure.repository.driver.DriverMapper;
 import com.cardonamaturana.transportms.infrastructure.repository.driver.DriverRepository;
 import lombok.RequiredArgsConstructor;

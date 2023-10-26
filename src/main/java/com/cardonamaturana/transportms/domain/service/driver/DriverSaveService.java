@@ -1,4 +1,4 @@
-package com.cardonamaturana.transportms.domain.service;
+package com.cardonamaturana.transportms.domain.service.driver;
 
 import com.cardonamaturana.transportms.domain.entity.Driver;
 
