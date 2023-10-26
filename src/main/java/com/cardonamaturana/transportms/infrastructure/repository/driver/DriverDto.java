@@ -7,8 +7,14 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Size;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "drivers")
 public class DriverDto {
 
@@ -29,10 +35,10 @@ public class DriverDto {
   String name;
 
   @Size(max = 10)
-  @Column(nullable = false)
+  @Column(name = "cellphone", nullable = false)
   String cellphone;
 
-  @Size(max = 20)
+  @Size(max = 50)
   String address;
 
 }
