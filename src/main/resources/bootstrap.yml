@@ -27,6 +27,7 @@ spring:
       mode: always
 
 springdoc:
+  packagesToScan: com.cardonamaturana.transport-ms
   swagger-ui:
     path: /swagger-ui/index.html
   api:
