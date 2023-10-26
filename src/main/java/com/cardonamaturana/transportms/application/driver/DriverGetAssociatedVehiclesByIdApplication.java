@@ -11,8 +11,10 @@ import org.springframework.stereotype.Service;
 public class DriverGetAssociatedVehiclesByIdApplication {
 
   private final DriverGetAssociatedVehiclesByIdService getVehiclesByDriverId;
+  private final DriverProcess driverProcess;
 
   public List<Vehicle> get(Long driverId) {
+    driverProcess.driverIsExistById(driverId);
     return getVehiclesByDriverId.get(driverId);
   }
 
