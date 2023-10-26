@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 import jakarta.validation.constraints.Size;
 
 @Entity
-@Table(name = "driver")
+@Table(name = "drivers")
 public class DriverDto {
 
   @Id()

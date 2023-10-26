@@ -12,7 +12,7 @@ import jakarta.persistence.Table;
 import jakarta.validation.constraints.Size;
 
 @Entity
-@Table(name = "order")
+@Table(name = "orders")
 public class OrderDto {
 
   @Id()
