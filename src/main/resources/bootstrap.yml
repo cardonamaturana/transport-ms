@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: transport-ms
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST}:${MYSQL_PORT}/${MYSQL_DB}
+    username: ${MYSQL_USERNAME}
+    password: ${MYSQL_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  hikari:
+    connection-test-query: SELECT 1
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui/index.html
+  api:
+    docs:
+      path: /swagger-doc/v3/api-docs
+      groups:
+        enable: true
