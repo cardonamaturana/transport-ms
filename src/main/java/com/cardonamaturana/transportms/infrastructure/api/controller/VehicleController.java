@@ -11,6 +11,7 @@ import com.cardonamaturana.transportms.infrastructure.api.mapper.vehicle.Vehicle
 import com.cardonamaturana.transportms.infrastructure.api.mapper.vehicle.VehicleResponseMapper;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import jakarta.validation.Valid;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -39,7 +40,7 @@ public class VehicleController {
   @Operation(summary = "Create Vehicle", description = "Create a new vehicle into database", responses = {
       @ApiResponse(responseCode = "200", description = "create successful"),
       @ApiResponse(responseCode = "400", description = "error in any field of JSON request")})
-  public ResponseEntity<VehicleResponse> saveVehicle(
+  public ResponseEntity<VehicleResponse> saveVehicle(@Valid
       @RequestBody VehicleRequest vehicleRequest) {
     return ResponseEntity.ok(vehicleResponseMapper.toDto(
         vehicleSaveApplication.save(vehicleRequestMapper.toEntity(vehicleRequest))));

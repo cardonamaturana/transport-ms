@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active: test
+  application:
+    name: transport-ms
+---
+spring:
+  application:
+    name: transport
+    version: 1.0
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false;NON_KEYWORDS=SYSTEM_USER
+    username: sa
+    password:
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    defer-datasource-initialization: true
+
+      
